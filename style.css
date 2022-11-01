@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'blabla';
+    src: url(font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+:root{
+    --primary-color: #2C0648;
+    --secondary-color: #062448 ;
+    --tertiary-color: #9abddb;
+    --linear-gradient: linear-gradient(180deg, rgba(44,6,72,1) 0%, rgba(44,6,72,1) 49%, #082349 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: var(--linear-gradient);
+}
+
+body{
+    min-height: 100vh;
+    position :relative
+}
+
+header{
+    height: 40px;
+    min-width: 100%;
+    background: rgba(44,6,72,1);
+    position :relative;
+}
+
+#logo{
+    height: 100px;
+}
+
+/* header img{
+    height: 82px;
+    width: 277px;
+    position :absolute;
+    top: 25%;
+    left: calc(25% - 138.5px);
+} */
+
+
+
+section{
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h2{
+    color: white;
+    font-size: 36px;
+    font-family: 'blabla';
+    margin-top: 20px;
+}
+
+section div{
+    width: 90%;
+    height: 100%;
+    margin-top: 35px;
+}
+
+.paragraphe p{
+    color: black;
+    font-family: 'regular';
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+a{
+    height: 45px;
+    width: 450px;
+    background: rgba(44,6,72,1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    color: white; 
+    font-family: 'blabla';
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 60px;
+
+}
+
+a:hover{
+    background: #446c8d;
+}
+
+footer{
+    /* border: 1px solid red; */
+    height: 200px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#footer-img{
+    display: block;
+    height: 147px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.bordure{
+    width: 31px;
+    height: 100%;
+    background: var(--linear-gradient);
+    /* border-radius: 15px; */
+    position: absolute;
+    bottom: 50px;
+    margin-top: 0;
+}
+
+#un{
+    left: 0;
+    top:0;
+}
+
+#deux{
+    right: 0;
+    top:0;
+}
